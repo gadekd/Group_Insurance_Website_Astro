@@ -1,7 +1,19 @@
-banner-frame {
-
+.banner-container {
+    border: 1px solid black;
+    padding: 1.5rem;
 }
 
-banner {
-    
+.banner {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #323232;
+}
+
+.video-container {
+    border: 1px solid black; 
+}
+
+.video-player {
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
