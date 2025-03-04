@@ -1,0 +1,27 @@
+.nav-links {
+    /* margin-left: 5em; */
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+}
+
+.nav-links a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background-color: #cab5a8;
+}
+
+.nav-link-logo {
+    /* max-width: 12rem; */
+}

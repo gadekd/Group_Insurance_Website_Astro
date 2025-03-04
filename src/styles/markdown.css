@@ -1,0 +1,12 @@
+.markdown-page-title {
+    text-align: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.markdown-page-img {
+    width: 20%;   
+}
