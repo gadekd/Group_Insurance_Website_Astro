@@ -1,16 +1,30 @@
 html {
     font-family: sans-serif;
-    background-color: #ddd0c8;
+    background-color: var(--sunset-glow-cream);
 }
 
 body {
     margin: 0 auto;
     width: 100%;
-    max-width: 100ch;
-    padding: 1rem;
-    line-height: 1.5;
+    
 }
 
 * {
     box-sizing: border-box;
+  }
+
+.main-container {
+  max-width: 120ch;
+  padding: 1rem;
+  line-height: 1.5;
+  margin: auto;
+}
+
+  /* Color palettes */
+
+  :root {
+    --sunset-glow-orange: #ff9f1c;
+    --sunset-glow-yellow: #ffbf69;
+    --sunset-glow-brown: #cb997e;
+    --sunset-glow-cream: #ffe8d6;
   }
