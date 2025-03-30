@@ -62,14 +62,5 @@ div a {
 
 div:not(:first-child) a:hover,
 div:not(:first-child) a:focus {
-    background-color: #cab5a8;
-}
-
-div:not(:last-child)::after {
-    position: absolute;
-    bottom: -1rem;
-    left: 0;
-    width: 100%;
-    content: 'X';
-    border: 5px soild #c00;
+    /* background-color: #cab5a8; */
 }

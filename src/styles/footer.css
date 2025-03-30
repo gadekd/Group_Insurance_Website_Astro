@@ -1,36 +1,64 @@
 .footer-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 15px 10px;
-    width: 100%;
-    border: 1px solid black;
     background-color: #323232;
-    color: whitesmoke;
-    position: absolute;
-    margin: 0;
-    padding: 1rem;
 }
 
-.container-left, .container-right, .container-bottom {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto; 
-    gap: 15px 10px;
-    width: 100%;
+.upper-container {
+    display: flex;
+    justify-content: space-between;
+    /* flex-flow: column wrap; */
+}
+
+.lower-container {
+    /* background-color: #222222; */
+}
+
+.container-left {
+    margin: 3% 2.5% 0 5%;
+}
+
+.container-right {
+    margin: 3% 5% 0 2.5%;
+}
+
+.copyright-link {
+    font-size: .8rem;
 }
 
 .footer-links {
-    color: white;
+    padding: 0;
+}
+
+.footer-links, .links-container {
+    color: var(--sunset-glow-white);
+    list-style: none;
+}
+
+.footer-links a, .links-container a {
+    text-transform: none;
+    font-weight: normal;
+}
+
+.footer-links a:hover, .links-container a:hover {
+    color: var(--sunset-glow-cream);
 }
 
 .footer-logo {
     max-width: 25rem;
+    filter: grayscale(100%);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .logo-desc {
     font-size: 1rem;
     padding: 0 1rem 0 1rem;
     color: #ffffffa0;
+    text-align: center;
 }
 
 .desc-line1 {
@@ -39,6 +67,57 @@
 
 .desc-line2 {
     font-size: .8rem;
+}
+
+.container-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.5% 0 2.5%;
+    font-size: .8rem;
+    color: var(--sunset-glow-white);
+}
+
+.copyright-container-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.pl4-name {
+    font-weight: bold;
+}
+
+.copyright-link {
+    text-transform: none;
+    font-weight: normal;
+    /* margin-left: 5%; */
+}
+
+.copyright-link:hover {
+    color: var(--sunset-glow-cream);
+}
+
+.effp-cert-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.effp-logo {
+    max-width: 8rem;
+    filter: grayscale(100%);
+}
+
+.effp-info-container {
+    text-align: center;
+    color: #ffffffa0;
+}
+
+.xxx {
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 a:link{color:inherit}
