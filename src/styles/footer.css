@@ -1,15 +1,16 @@
 .footer-container {
-    background-color: #323232;
+    background: rgb(35,35,35);
+    background: linear-gradient(0deg, rgba(35,35,35,1) 0%, rgba(50,50,50,1) 100%);
 }
 
 .upper-container {
     display: flex;
-    justify-content: space-between;
-    /* flex-flow: column wrap; */
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .lower-container {
-    /* background-color: #222222; */
+    /* background-color: #232323; */
 }
 
 .container-left {
@@ -24,6 +25,10 @@
     font-size: .8rem;
 }
 
+.links-container {
+    padding-left: .4rem;
+}
+
 .footer-links {
     padding: 0;
 }
@@ -36,6 +41,11 @@
 .footer-links a, .links-container a {
     text-transform: none;
     font-weight: normal;
+    font-size: .8rem;
+}
+
+.footer-links li {
+    padding-bottom: .4rem;
 }
 
 .footer-links a:hover, .links-container a:hover {
@@ -57,15 +67,44 @@
 .logo-desc {
     font-size: 1rem;
     padding: 0 1rem 0 1rem;
-    color: #ffffffa0;
     text-align: center;
 }
 
 .desc-line1 {
-    margin: -1% 0;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    color: #ececec;
 }
 
-.desc-line2 {
+.section-title-links {
+    font-size: 1rem;
+    padding-left: .3rem;
+}
+
+.section-title {
+    font-size: 1rem;
+    /* padding-left: .4rem; */
+}
+
+.divider-links {
+    border-top: 5px solid #ececec;
+    height: 1rem;
+    max-width: 15%;
+    margin-left: .3rem;
+    margin-bottom: -0.5rem;
+}
+
+.divider-contact {
+    border-top: 5px solid #ececec;
+    height: 1rem;
+    max-width: 15%;
+    /* margin-left: .4rem; */
+    margin-bottom: -0.5rem;
+}
+
+.info-container {
+    padding-left: .4rem;
+    color: #ececec;
     font-size: .8rem;
 }
 
@@ -75,6 +114,10 @@
     margin: 0 2.5% 0 2.5%;
     font-size: .8rem;
     color: var(--sunset-glow-white);
+}
+
+.copyright-container-left {
+    width: 50%;
 }
 
 .copyright-container-right {
@@ -112,10 +155,10 @@
 
 .effp-info-container {
     text-align: center;
-    color: #ffffffa0;
+    color: #ececec;
 }
 
-.xxx {
+.effp-partner {
     font-weight: bold;
     text-transform: uppercase;
 }

@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import '../styles/contact.css';
+
+const pageTitle = 'Kontakt • Ubezpieczenie grupowe'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+	<div class="banner-container">
+        <h3 class="banner">Chcesz o coś zapytać? Skontaktuj się z nami</h3>
+    </div>
+
+    <div class="info-card-container">
+        <div class="info-card-name">
+            <p>Prywatnel4.pl Sp. z o.o.</p>
+        </div>
+
+        <div class="info-card-address">
+            <p>ul. Zebrzydowicka 35, 44-210 Rybnik</p>
+        </div>
+
+        <div class="info-card-numbers">
+            <p>NIP: 6423236718</p>
+            <p>KRS: 0000963774</p>
+        </div>
+
+        <div class="info-card-phone">
+            <p>(+48) 696 043 773</p>
+        </div>
+    </div>
+</BaseLayout>

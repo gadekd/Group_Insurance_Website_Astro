@@ -1,0 +1,16 @@
+.banner-container {
+    border: 1px solid black;
+    padding: 1.5rem;
+}
+
+.banner {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #323232;
+}
+
+.info-card-container {
+    padding: 1.5rem;
+    border: .5rem solid var(--sunset-glow-orange);
+    border-radius: 2rem;
+}
