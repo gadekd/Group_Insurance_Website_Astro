@@ -9,8 +9,65 @@
     color: #323232;
 }
 
+.info-page-container {
+    display: flex;
+    align-items: center;
+}
+
+.info-card-links {
+    flex-basis: 100%;
+}
+
+.info-card-icon-ion {
+    background-color: var(--sunset-glow-brown);
+    color: var(--sunset-glow-cream);
+    border-radius: 5rem;
+    padding: .5rem;
+    margin: 1rem 1rem 1rem 0;
+    font-size: 3rem;
+}
+
+.info-card-link-container {
+    display: flex;
+    align-items: center;
+}
+
 .info-card-container {
     padding: 1.5rem;
-    border: .5rem solid var(--sunset-glow-orange);
-    border-radius: 2rem;
+    border: .5rem solid var(--sunset-glow-brown);
+    border-bottom-left-radius: 2rem;
+    background-color: var(--sunset-glow-brown);
+    margin-top: 1rem;
+    flex-basis: 100%;
+}
+
+.info-card-name {
+    font-weight: bold;
+}
+
+.info-card-button {
+    border: none;
+    background: none;
+}
+
+.info-card-button:hover {
+    color: var(--sunset-glow-yellow);
+}
+
+.info-card-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.info-card-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 1rem;
+}
+
+.info-card-icon {
+    max-width: 1rem;
 }

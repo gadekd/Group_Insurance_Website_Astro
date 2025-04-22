@@ -28,7 +28,7 @@
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: #cab5a8;
+    background-color: var(--sunset-glow-brown);
 }
 
 .header-logo {
