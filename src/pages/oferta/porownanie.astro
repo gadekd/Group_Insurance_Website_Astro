@@ -1,0 +1,307 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import '../../styles/porownanie.css';
+
+const pageTitle = 'Porownanie ofert wg najczęstszych zdarzeń ubezpieczeniowych • Ubezpieczenie grupowe'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+	<h3 class="table-caption">Porównanie ofert wg najczęstszych zdarzeń ubezpieczeniowych</h3>
+	<div class="table-container">
+		<table class="offer-table">
+			<!-- <caption class="table-caption">Porównanie ofert wg najczęstszych zdarzeń ubezpieczeniowych</caption> -->
+			<thead>
+				<tr class="cell-neutral">
+					<th colspan="2" class="cell-sticky cell-neutral cell-front">Nazwa towarzystwa →</th>
+					<th class="company-header">UNUM</th>
+					<th class="company-header">UNIQA</th>
+					<th class="company-header">WARTA</th>
+					<th class="company-header">ERGO HESTIA</th>
+					<th class="company-header">VIENA LIFE</th>
+					<th class="company-header">ALLIANZ</th>
+					<th class="company-header">GENERALI</th>
+					<th class="company-header">PZU</th>
+					<th class="company-header">NN</th>
+				</tr>
+				<tr class="cell-neutral">
+					<th colspan="2" class="cell-sticky cell-neutral cell-front">Zakres polisy →</th>
+					<th>Grupowe Hybrydowe</th>
+					<th>Grupowe</th>
+					<th>Grupowe</th>
+					<th>Grupowe</th>
+					<th>Grupowe</th>
+					<th>Grupowe</th>
+					<th>Grupowe</th>
+					<th>Grupowe</th>
+					<th>Grupowe</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2" class="cell-index">1</td>
+					<td class="cell-white">
+						<div>POBYT w szpitalu w NW - <strong>SOR</strong></div>
+						<div>od kiedy:</div>
+						<div>od samej wizyty ?</div>
+						<div>od zmiany daty = 1 dzień ?</div>
+						<div>wdrożona procedura medyczna?</div>
+					</td>
+					<td class="cell-positive">od samej wizyty</td>
+					<td class="cell-positive">od samej wizyty</td>
+					<td class="cell-positive">od samej wizyty</td>
+					<td class="cell-negative">min 1 dzień (zmiana daty)</td>
+					<td class="cell-negative">od samej wizyty warunek: wdrożenie procedury medycznej</td>
+					<td class="cell-positive">od samej wizyty</td>
+					<td class="cell-positive">od samej wizyty</td>
+					<td class="cell-negative">od samej wizyty <strong>nie - SOR</strong></td>
+					<td class="cell-positive">od samej wizyty</td>
+				</tr>
+				<tr>
+					<td class="cell-white">
+						<div>POBYT w SZPITALU - CHOROBA - <strong>SOR</strong></div>
+						<div>od kiedy:</div>
+						<div>od samej wizyty ?</div>
+						<div>od zmiany daty = 1 dzień ?</div>
+						<div>wdrożona procedura medyczna?</div>
+					</td>
+					<td class="cell-positive cell-silent">od samej wizyty</td>
+					<td class="cell-positive">od samej wizyty</td>
+					<td class="cell-positive">od samej wizyty</td>
+					<td class="cell-negative">min 1 dzień (zmiana daty)</td>
+					<td class="cell-negative">od samej wizyty warunek: wdrożenie procedury medycznej</td>
+					<td class="cell-negative">min 1 dzień (zmiana daty)</td>
+					<td class="cell-positive">od samej wizyty</td>
+					<td class="cell-negative">od samej wizyty <strong>nie - SOR</strong></td>
+					<td class="cell-positive">od samej wizyty</td>
+				</tr>
+				<tr>
+					<td class="cell-index">2</td>
+					<td class="cell-white">
+						<div><strong>ŚWIADCZENIE LEKOWE</strong></div>
+						<div>dopłata do pobytu w szpitalu</div>
+						<div>(przyczyna nie ma znaczenia)</div>
+					</td>
+					<td class="cell-positive">św. lekowe do wizyty w szpitalu</td>
+					<td class="cell-negative">po 4 dniach pobytu w szpitalu</td>
+					<td class="cell-negative">św. lekowe do wizyty w szpitalu; UWAGA: oddział <strong>nie - SOR</strong></td>
+					<td class="cell-negative">po 3 dniach pobytu w szpitalu</td>
+					<td class="cell-negative">św. lekowe pod warunkiem wypłaty za pobyt w szpitalu</td>
+					<td class="cell-negative">św. lekowe na podstawie rachunków za leki zalecone na wypisie</td>
+					<td class="cell-negative">św. lekowe na podstawie rachunków za leki zalecone na wypisie</td>
+					<td class="cell-negative">karta lekowa do wybranych aptek</td>
+					<td class="cell-positive">św. lekowe do wizyty w szpitalu</td>
+				</tr>
+				<tr>
+					<td rowspan="4" class="cell-neutral-dark">3</td>
+					<td class="cell-neutral">
+						<div class="assistance-header">ASSISTANCE</div>
+						<div><strong>Prywatne wizyty w NW</strong></div>
+						<div><strong>do 10.000 zł na każde zdarzenie</strong></div>
+						<div>UBEZPIECZONY + CZŁONKOWIE RODZINY</div>
+					</td>
+					<td class="cell-positive">TAK dla <strong>wszystkich</strong> członków rodziny</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-positive">20 wizyt w NW; do 10 specjalizacji dla UBEZPIECZONEGO (MEDIPLAN)</td>
+					<td class="cell-positive">Limit 1700 zł na zdarzenie na każdą osobę oddzielnie</td>
+					<td class="cell-positive">limit 500 zł dla każdego członka rodziny</td>
+					<td class="cell-positive">limit 500 zł na zdarzenie max 4 razy w roku</td>
+					<td class="cell-negative">4 konsultacje dla UBEZPIECZONEGO</td>
+					<td class="cell-negative">BRAK</td>
+				</tr>
+				<tr>
+					<td class="cell-neutral">
+						<div class="assistance-header">ASSISTANCE</div>
+						<div><strong>Prywatne wizyty</strong></div>
+						<div><strong>stacjonarne lub domowe</strong></div>
+						<div>(Internista Pediatra)</div>
+						<div>UBEZPIECZONY + CZŁONKOWIE RODZINY</div>
+					</td>
+					<td class="cell-positive cell-silent">po 3 wizyty na <strong>każdego członka rodziny</strong></td>
+					<td class="cell-positive">3 wizyty dla rodziny</td>
+					<td class="cell-negative">INTERNISTA łącznie do wizyt dla wszystkich członków rodziny</td>
+					<td class="cell-negative">INTERNISTA do kwoty 500 zł na rok dla wszyskich członków rodziny</td>
+					<td class="cell-positive">limit 1700 zł na zdarzenie na każdą os. oddzielnie</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-positive">INTERNISTA 500 zł na zdarzenie max. 2 razy w roku</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-positive">INTERNISTA 5 wizyt dla każdego członka rodziny</td>
+				</tr>
+				<tr>
+					<td class="cell-neutral">
+						<div class="assistance-header">ASSISTANCE</div>
+						<div><strong>Prywatne wizyty</strong></div>
+						<div><strong>stacjonarne</strong></div>
+						<div>(POZOSTAŁE SPECJALIZACJE)</div>
+						<div>UBEZPIECZONY + CZŁONKOWIE RODZINY</div>
+					</td>
+					<td class="cell-positive cell-silent">po 3 wizyty na <strong>każdego członka rodziny</strong></td>
+					<td class="cell-positive">3 wizyty dla rodziny</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-positive">limit 1700 zł na zdarzenie na każdą os. oddzielnie</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">5 KONSULTACJI po CIĘŻKIEJ CHOROBIE z KATALOGU CHORÓB</td>
+					<td class="cell-negative">BRAK</td>
+				</tr>
+				<tr>
+					<td class="cell-neutral">
+						<div class="assistance-header">ASSISTANCE</div>
+						<div><strong>REHABILITACJA</strong></div>
+						<div>w NW i w STANACH CHOROBOWYCH</div>
+						<div>(ZAPALNYCH)</div>
+					</td>
+					<td class="cell-positive cell-silent">10 000 zł <strong>na zdarzenie</strong> dla każdego członka rodziny</td>
+					<td class="cell-positive">6 000 zł <strong>na zdarzenie</strong> dla każdego członka rodziny</td>
+					<td class="cell-positive">2 000 zł <strong>na zdarzenie</strong> dla każdego członka rodziny</td>
+					<td class="cell-negative">40 zabiegów w NW tylko dla ubezpieczonego</td>
+					<td class="cell-positive">limit 700 zł na zdarzenie na każdą os. oddzielnie</td>
+					<td class="cell-positive">1 000 zł choroba 2 000 zł w NW dla każdego członka rodziny</td>
+					<td class="cell-positive">500 zł choroba oraz w NW dla każdego członka rodziny</td>
+					<td class="cell-negative">40 zabiegów w NW na drodze lub w pracy tylko dla ubezpieczonego</td>
+					<td class="cell-negative">2 000 zł w NW dla każdego członka rodziny</td>
+				</tr>
+				<tr>
+					<td class="cell-index">4</td>
+					<td class="cell-white">
+						<div>REKONWALESCENCJA</div>
+						<div>po pobycie w szpitalu</div>
+					</td>
+					<td class="cell-positive">po 7 dniach pobytu w szpitalu</td>
+					<td class="cell-negative">po 14 dniach pobytu w szpitalu</td>
+					<td class="cell-negative">po 10 dniach pobytu w szpitalu</td>
+					<td class="cell-negative">po 2 dniach pobytu w szpitalu WARUNEK: L4 min 31 dni</td>
+					<td class="cell-negative">po 10 dniach pobytu w szpitalu</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">po 14 dniach pobytu w szpitalu</td>
+					<td class="cell-negative">po 14 dniach pobytu w szpitalu</td>
+					<td class="cell-negative">po 14 dniach pobytu w szpitalu</td>
+				</tr>
+				<tr>
+					<td class="cell-index">5</td>
+					<td class="cell-white">
+						<div><strong>DEFINICJA USZCZERBKU</strong></div>
+					</td>
+					<td class="cell-positive">uszczerbek <strong>bez</strong> trwałego następstwa</td>
+					<td class="cell-positive">uszczerbek <strong>bez</strong> trwałego następstwa</td>
+					<td class="cell-negative"><strong>trwały</strong> uszczerbek na zdrowiu</td>
+					<td class="cell-negative"><strong>trwały</strong> uszczerbek na zdrowiu</td>
+					<td class="cell-negative"><strong>trwały</strong> uszczerbek na zdrowiu</td>
+					<td class="cell-negative"><strong>trwały</strong> uszczerbek na zdrowiu</td>
+					<td class="cell-negative"><strong>trwały</strong> uszczerbek na zdrowiu</td>
+					<td class="cell-negative"><strong>trwały</strong> uszczerbek na zdrowiu</td>
+					<td class="cell-negative"><strong>trwały</strong> uszczerbek na zdrowiu</td>
+				</tr>
+				<tr>
+					<td class="cell-index">6</td>
+					<td class="cell-white">
+						<div><strong>PRE-DIAGNOZA</strong></div>
+						<div>(diagnostyka w przypadku poważnego<strong>podejrzenia</strong></div>
+						<div>poważnego zachorowania)</div>
+					</td>
+					<td class="cell-positive">TAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+				</tr>
+				<tr>
+					<td class="cell-index">7</td>
+					<td class="cell-white">
+						<div><strong>AKTYWNOŚĆ SPORTOWA</strong></div>
+						<div>(PODWYŻSZONEGO RYZYKA oraz</div>
+						<div>EKSTREMALNA)</div>
+					</td>
+					<td class="cell-positive">TAK - ochrona w przypadku wszelkiej aktywności sportowej <strong>PRACOWNIKA</strong></td>
+					<td class="cell-negative">sport ekstremalny i podwyższonego ryzyka <strong>WYŁĄCZONY</strong></td>
+					<td class="cell-negative">sport ekstremalny i podwyższonego ryzyka <strong>WYŁĄCZONY</strong></td>
+					<td class="cell-negative">sport ekstremalny i podwyższonego ryzyka <strong>WYŁĄCZONY</strong></td>
+					<td class="cell-negative">sport ekstremalny i podwyższonego ryzyka <strong>WYŁĄCZONY</strong></td>
+					<td class="cell-negative">sport ekstremalny i podwyższonego ryzyka <strong>WYŁĄCZONY</strong></td>
+					<td class="cell-negative">sport ekstremalny i podwyższonego ryzyka <strong>WYŁĄCZONY</strong></td>
+					<td class="cell-positive">sport amatorski</td>
+					<td class="cell-negative">sport ekstremalny i podwyższonego ryzyka <strong>WYŁĄCZONY</strong></td>
+				</tr>
+				<tr>
+					<td class="cell-index">8</td>
+					<td class="cell-white">
+						<div>BRAK WYŁĄCZEŃ NA ZDARZENIE</div>
+						<div>pod WPŁYWEM ALKOHOLU</div>
+						<div>(wyłączenie: wypadek komunikacyjny</div>
+						<div>i w pracy - jeżeli stan miał wpływ na</div>
+						<div>wypadek)</div>
+					</td>
+					<td class="cell-positive">TAK - wypłata świadczeń bez znaczenia na stężęnie alkoholu</td>
+					<td class="cell-negative">powyżej 0,2 promila - brak wypłaty świadczeń</td>
+					<td class="cell-negative">powyżej 0,2 promila - brak wypłaty świadczeń</td>
+					<td class="cell-negative">powyżej 0,2 promila - brak wypłaty świadczeń</td>
+					<td class="cell-negative">powyżej 0,2 promila - brak wypłaty świadczeń</td>
+					<td class="cell-negative">powyżej 0,2 promila - brak wypłaty świadczeń</td>
+					<td class="cell-negative">po spożyciu alkoholu potwierdzonego w dok. medycznej</td>
+					<td class="cell-negative">powyżej 0,2 promila - brak wypłaty świadczeń</td>
+					<td class="cell-negative">powyżej 0,2 promila - brak wypłaty świadczeń</td>
+				</tr>
+				<tr>
+					<td class="cell-index">9</td>
+					<td class="cell-white">
+						<div>POBYT W SZPITALU - <strong>CIĄŻA</strong></div>
+						<div>(oddział w PATOLOGII CIĄŻY - ciąża, poród,</div>
+						<div>połóg)</div>
+					</td>
+					<td class="cell-positive">TAK - za KAŻDY DZIEŃ POBYTU w SZPITALU</td>
+					<td class="cell-positive">TAK - za KAŻDY DZIEŃ POBYTU w SZPITALU</td>
+					<td class="cell-positive">TAK - za KAŻDY DZIEŃ POBYTU w SZPITALU (min 3 dni)</td>
+					<td class="cell-positive">TAK - za KAŻDY DZIEŃ POBYTU w SZPITALU</td>
+					<td class="cell-positive">PATOLOGIA CIĄŻY <stong>CIĄŻA WYSOKIEGO RYZYKA</stong></td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">PATOLOGIA CIĄŻY ZAGROŻENIE dla ŻYCIA UBEZPIECZONEJ</td>
+					<td class="cell-positive">TAK - za KAŻDY DZIEŃ POBYTU w SZPITALU</td>
+					<td class="cell-negative">BRAK</td>
+				</tr>
+				<tr>
+					<td class="cell-index">10</td>
+					<td class="cell-white">
+						<div>INDYWIDUALNIE (PAKIET DODATKOWY)</div>
+						<div><strong>E-PRZYCHODNIA</strong></div>
+					</td>
+					<td class="cell-positive">TAK - 7 zł/miesiąc 19 specjalistów</td>
+					<td class="cell-positive">TAK - 12 zł/miesiąc 10 specjalistów</td>
+					<td class="cell-positive">TAK - 12 zł/miesiąc 12 specjalistów</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+				</tr>
+				<tr>
+					<td class="cell-index">11</td>
+					<td class="cell-white">
+						<div>INDYWIDUALNIE (PAKIET DODATKOWY)</div>
+						<div><strong>ONKOLOGIA - BADANIE PET</strong></div>
+					</td>
+					<td class="cell-positive">
+						<div>2 x BADANIE PET</div>
+						<div>1 x podejrzenie</div>
+						<div>1 x po diagnozie</div>
+					</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+					<td class="cell-negative">BRAK</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</BaseLayout>

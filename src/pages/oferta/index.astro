@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import '../../styles/oferta.css';
+
+const pageTitle = 'Oferta • Ubezpieczenie grupowe'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+	<div class="banner-container">
+		<h3 class="banner">Porównaj zakres ubezpieczeń i wybierz najlepszy dla swojej firmy</h3>
+	</div>
+
+	<div class="buttons-container">
+        <div class="button-container">
+            <button class="offer-button" role="button">
+                <!-- <a class="offer-link" href="../src/assets/pdf/9companies.pdf" download="Ubezpieczenia_Grupowe_Oferta"> -->
+                <a class="offer-link" href="/oferta/porownanie">
+                    <ion-icon name="cloud-download"></ion-icon>
+                    Porównanie zakresu
+                </a>
+            </button>
+        </div>
+        <div class="button-container">
+            <button class="offer-button" role="button">
+                <a class="offer-link" href="/oferta/przykladowa-oferta">
+                    <ion-icon name="cloud-download"></ion-icon>
+                    Przykłdowa oferta
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h3>
+            Szablon ofertowy
+        </h3>
+
+        <form action="/submit" method="post">
+            <label for="companies">Wybierz towarzystwa</label>
+            <input type="text" id="companies" name="companies" />
+            <label for="nip">NIP</label>
+            <input type="text" id="nip" name="nip" />
+            <label for="workersAmount">Ilość pracowników</label>
+            <input type="number" id="workersAmount" name="workersAmount" />
+            <label for="maxContribution">Maksymalna stawka za osobę</label>
+            <input type="text" id="maxContribution" name="maxContribution" />
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" />
+            <label for="phone">Telefon</label>
+            <input type="text" id="phone" name="phone" />
+            <label for="recording">Czy chcesz dedykowane nagranie dla pracowników?</label>
+            <input type="checkbox" id="recording" name="recording" value="Tak" />
+            <label for="contact">Wyrażam zgodę na kontakt dotyczący oferty ubezpieczenia grupowego</label>
+            <input type="checkbox" id="contact" name="contact" value="Tak" />
+            <button class="offer-button" role="button">
+                <ion-icon name="cloud-upload"></ion-icon>
+                <input class="submit-button" type="submit" value="PRZEŚLIJ" />
+            </button>
+        </form>
+    </div>
+</BaseLayout>

@@ -1,0 +1,145 @@
+.offer-table {
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.15);
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 2rem;
+    font-size: .8rem;
+}
+
+.offer-table th {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: #b2d4ea;
+}
+
+.offer-table th:not(:first-child) {
+    min-width: 125px;
+}
+
+.offer-table td {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.offer-table thead, .offer-table th {
+    padding: .5rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #000;
+    position: sticky;
+    top: 0;
+    z-index: 2 !important;
+}
+
+.offer-table thead th {
+    padding: .5rem;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.offer-table tbody td {
+    padding: .5rem;
+    text-align: center;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+    font-size: .75rem;
+}
+
+.offer-table tbody tr:last-child td {
+    background-color: #ddd !important;
+}
+
+.offer-table tbody td:first-child {
+    text-align: left;
+    padding: .5rem 1rem;
+}
+
+.offer-table tbody tr:last-child td:first-child {
+    text-align: right;
+}
+
+.offer-table tbody tr:last-child td:not(:first-child) {
+    font-weight: bold;
+}
+
+.table-caption {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cell-dark {
+    background-color: #ddd !important;
+}
+
+.cell-inactive {
+    background-color: #aaa !important;
+}
+
+.cell-broad {
+    background-color: #aaa !important;
+    font-weight: bold;
+}
+
+.cell-broad-division {
+    margin-bottom: 4rem;
+}
+
+.header-divider {
+    margin-bottom: 1rem;
+}
+
+.header-subtext {
+    font-size: .65rem;
+    color: #3d729d;
+}
+
+.cell-tooltip {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    float: right;
+}
+
+.cell-tooltip-icon {
+    font-size: 1rem;
+    color: #3d729d;
+    vertical-align: middle;
+    margin-top: -0.2rem;
+}
+
+.cell-tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: .2rem 0.5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Umieszcza tooltip nad ikoną */
+    left: 100%;
+    margin-left: -105px; /* Wypośrodkowuje tooltip */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cell-tooltip-text::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.cell-tooltip:hover .cell-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}

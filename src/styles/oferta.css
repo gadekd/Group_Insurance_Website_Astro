@@ -1,0 +1,115 @@
+.banner-container {
+    /* border: 1px solid black; */
+    padding: 1.5rem;
+}
+
+.banner {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #323232;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.offer-button {
+    /* background-color: var(--sunset-glow-brown); */
+    background: linear-gradient(135deg,rgba(203, 153, 126, 1) 0%, rgba(183, 138, 113, 1) 50%);
+    /* border-left: .2rem solid #dbb8a5;
+    border-top: .2rem solid #dbb8a5;
+    border-right: .2rem solid #8e6b58;
+    border-bottom: .2rem solid #8e6b58; */
+    align-items: center;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.offer-button::after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.offer-button:hover::after {
+    transform: translate(0, 0);
+}
+
+.offer-button:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.offer-button:hover {
+    outline: 0;
+}
+
+.offer-link {
+    font-weight: normal;
+}
+
+.submit-button {
+    background: none;
+    border: none;
+    box-shadow: none !important;
+}
+
+input {
+    width: 100%;
+    padding: .3rem;
+    margin: .5rem 0;
+    border-radius: .35rem;
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+
+input:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+    transition: 0.2s;
+}
+
+/* @media (min-width: 768px) {
+  .offer-button {
+    padding: 0 40px;
+  }
+} */

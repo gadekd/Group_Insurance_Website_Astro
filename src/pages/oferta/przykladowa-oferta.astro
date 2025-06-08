@@ -1,0 +1,548 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import '../../styles/przykladowa-oferta.css';
+
+const pageTitle = 'Przykładowa oferta • Ubezpieczenie grupowe'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+	<h3 class="table-caption">Przykładowa oferta</h3>
+	<div class="table-container">
+		<table class="offer-table">
+			<!-- <caption class="table-caption">Porównanie ofert wg najczęstszych zdarzeń ubezpieczeniowych</caption> -->
+			<thead>
+				<tr>
+                    <th>Zakres głowny ubezpieczenia</th>
+                    <th>
+                        Oferta 1
+                        <div class="header-subtext">(HYBRYDOWA)</div>
+                        <div>65 zł</div>
+                    </th>
+                    <th>
+                        Oferta 2
+                        <div class="header-divider"></div>
+                        <div>85 zł</div>
+                    </th>
+                    <th>
+                        Oferta 3
+                        <div class="header-subtext">(HYBRYDOWA)</div>
+                        <div>100 zł</div>
+                    </th>
+                    <th>
+                        Oferta 4
+                        <div class="header-divider"></div>
+                        <div>100 zł</div>
+                    </th>
+                    <th>
+                        Oferta 5
+                        <div class="header-divider"></div>
+                        <div>130 zł</div>
+                    </th>
+                </tr>
+			</thead>
+			<tbody>
+				<tr>
+                    <td>ZGON UBEZPIECZONEGO Z DOWOLNEJ PRZYCZYNY</td>
+                    <td>100 000 zł</td>
+                    <td>50 000 zł</td>
+                    <td>50 000 zł</td>
+                    <td>50 000 zł</td>
+                    <td>50 000 zł</td>
+                </tr>
+                <tr>
+                    <td>ZGON w NNW</td>
+                    <td>200 000 zł</td>
+                    <td>100 000 zł</td>
+                    <td>100 000 zł</td>
+                    <td>100 000 zł</td>
+                    <td>100 000 zł</td>
+                </tr>
+                <tr>
+                    <td>ZGON w NNW KOMUNIKACYJNEGO</td>
+                    <td>200 000 zł</td>
+                    <td>150 000 zł</td>
+                    <td>150 000 zł</td>
+                    <td>150 000 zł</td>
+                    <td>150 000 zł</td>
+                </tr>
+                <tr>
+                    <td>ZGON w NNW w pracy</td>
+                    <td>300 000 zł</td>
+                    <td>150 000 zł</td>
+                    <td>150 000 zł</td>
+                    <td>150 000 zł</td>
+                    <td>150 000 zł</td>
+                </tr>
+                <tr>
+                    <td>ZGON w NNW KOMUNIKACYJNEGO w pracy</td>
+                    <td>400 000 zł</td>
+                    <td>200 000 zł</td>
+                    <td>200 000 zł</td>
+                    <td>200 000 zł</td>
+                    <td>200 000 zł</td>
+                </tr>
+                <tr>
+                    <td>ZGON UBEZPIECZONEGO - ZAWAŁ / UDAR MÓZGU</td>
+                    <td>200 000 zł</td>
+                    <td>50 000 zł</td>
+                    <td>100 000 zł</td>
+                    <td>50 000 zł</td>
+                    <td>100 000 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">USZCZERBEK NA ZDROWIU w NW za 1% (bez definicji <strong>TRWAŁY</strong>)</td>
+                    <td>2 000 zł</td>
+                    <td rowspan="34" class="cell-broad">
+                        <div class="cell-broad-division">UZUPEŁNIENIE</div>
+                        <div class="cell-broad-division">OFERTY nr 1</div>
+                        <div>TYLKO dla</div>
+                        <div class="cell-broad-division">CHĘTNYCH PRACOWNIKÓW</div>
+                        <div>OD 3 OSÓB</div>
+                    </td>
+                    <td>750 zł</td>
+                    <td>500 zł</td>
+                    <td>500 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">USZCZERBEK NA ZDROWIU w NW w PRACY za 1% (bez definicji <strong>TRWAŁY</strong>)</td>
+                    <td>2 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>750 zł</td>
+                    <td>1 000 zł</td>
+                    <td>1 000 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">USZCZERBEK NA ZDROWIU w NW KOMUNIKACYJNEGO w PRACY za 1% (bez definicji <strong>TRWAŁY</strong>)</td>
+                    <td>2 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>750 zł</td>
+                    <td>1 500 zł</td>
+                    <td>1 500 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">USZCZERBEK NA ZDROWIU - ZAWAŁ / UDAR MÓZGU za 1%</td>
+                    <td>500 zł</td>
+                    <!-- <td></td> -->
+                    <td>550 zł</td>
+                    <td>500 zł</td>
+                    <td>500 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark"><strong>DIAGNOSTYKA OBRAZOWA w NW</strong> (USG, RTG, TK, MR + pozostałe badania radiologiczne)</td>
+                    <td>TAK</td>
+                    <!-- <td></td> -->
+                    <td>TAK</td>
+                    <td>TAK</td>
+                    <td>TAK</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">WIZYTY LEKARSKIE: ORTOPEDA, CHIRURG, NEUROCHIRURG, NEUROLOG, LEKARZ REHABILITACJI</td>
+                    <td>TAK</td>
+                    <!-- <td></td> -->
+                    <td>TAK</td>
+                    <td>TAK</td>
+                    <td>TAK</td>
+                </tr>
+                <tr>
+                    <td>NIEZDOLNOŚĆ do PRACY - NW</td>
+                    <td>100 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>50 000 zł</td>
+                    <td>50 000 zł</td>
+                    <td>50 000 zł</td>
+                </tr>
+                <tr>
+                    <td>NIEZDOLNOŚĆ do PRACY - CHOROBA</td>
+                    <td>100 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>50 000 zł</td>
+                    <td>5 000 zł</td>
+                    <td>5 000 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">POWAŻNA CHOROBA - <strong>58 chorób</strong> w tym:</td>
+                    <td>20 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>10 000 zł</td>
+                    <td>10 000 zł</td>
+                    <td>7 000 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">ANGIOPLASTYKA NACZYŃ WIEŃCOWYCH</td>
+                    <td>20 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>10 000 zł</td>
+                    <td>2 000 zł</td>
+                    <td>1 400 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark"><strong>CHOROBY ZAKAŹNE - 9 chorób:</strong></td>
+                    <td>5 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>5 000 zł</td>
+                    <td>5 000 zł</td>
+                    <td>5 000 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">ŚWIADCZENIE LEKOWE po DIAGNOZIE POWAŻNEJ CHOROBY</td>
+                    <td>1 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>1 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td class="cell-inactive"></td>
+                </tr>
+                <tr>
+                    <td class="cell-dark"><strong>PRE-DIAGNOZA</strong> ŚWIADCZENIA MEDYCZNE W PRZYPADKU PODEJRZENIA POWAŻNEJ CHOROBY</td>
+                    <td>TAK</td>
+                    <!-- <td></td> -->
+                    <td>TAK</td>
+                    <td class="cell-inactive"></td>
+                    <td class="cell-inactive"></td>
+                </tr>
+                <tr>
+                    <td class="cell-dark"><strong>PRE-DIAGNOZA</strong> - BADANIA DIAGNOSTYCZNE - <strong>USG, EKG, RTG, TK, MR</strong>, KONSULTACJE MEDYCZNE</td>
+                    <td>3 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>3 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td class="cell-inactive"></td>
+                </tr>
+                <tr>
+                    <td class="cell-dark"><strong>LECZENIE SPECJLISTYCZNE - 11 PROCEDUR</strong></td>
+                    <td>5 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>5 000 zł</td>
+                    <td>10 000 zł</td>
+                    <td>5 000 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">POWTÓRNA OPINIA MEDYCZNA w WYNIKU DIAGNOZY POWAŻNEGO ZACHOROWANIA - <strong>ZAGRANICZNA</strong></td>
+                    <td>TAK</td>
+                    <!-- <td></td> -->
+                    <td>TAK</td>
+                    <td class="cell-inactive"></td>
+                    <td class="cell-inactive"></td>
+                </tr>
+                <tr>
+                    <td>OPERACJE CHIRURGICZNE</td>
+                    <td>5 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>5 000 zł</td>
+                    <td>5 000 zł</td>
+                    <td>5 000 zł</td>
+                </tr>
+                <tr>
+                    <td>OPERACJE CHIRURGICZNE w NNW</td>
+                    <td>9 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>9 000 zł</td>
+                    <td>9 800 zł</td>
+                    <td>6 700 zł</td>
+                </tr>
+                <tr>
+                    <td>ŚWIADCZENIE LEKOWE po OPERACJI</td>
+                    <td>1 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>1 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td class="cell-inactive"></td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">
+                        SZPITAL - CHOROBA
+                        <div class="cell-tooltip">
+                            <ion-icon class="cell-tooltip-icon" name="information-circle"></ion-icon>
+                            <span class="cell-tooltip-text">
+                                Wypłata świadczenia od 1. dnia pobytu w szpitalu bez wymogu 
+                                zmiany daty w stanach chorobowych oraz w NW
+                            </span>
+                        </div>
+                    </td>
+                    <td>100 zł</td>
+                    <!-- <td></td> -->
+                    <td>100 zł</td>
+                    <td>150 zł</td>
+                    <td>100 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">
+                        SZPITAL - ZAWAŁ SERCA / UDAR MÓZGU / NOWOTWÓR
+                        <div class="cell-tooltip">
+                            <ion-icon class="cell-tooltip-icon" name="information-circle"></ion-icon>
+                            <span class="cell-tooltip-text">
+                                Wypłata świadczenia od 1. dnia pobytu w szpitalu bez wymogu 
+                                zmiany daty w stanach chorobowych oraz w NW
+                            </span>
+                        </div>
+                    </td>
+                    <td>150 zł</td>
+                    <!-- <td></td> -->
+                    <td>100 zł</td>
+                    <td>250 zł</td>
+                    <td>200 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">
+                        SZPITAL - w NW
+                        <div class="cell-tooltip">
+                            <ion-icon class="cell-tooltip-icon" name="information-circle"></ion-icon>
+                            <span class="cell-tooltip-text">
+                                Wypłata świadczenia od 1. dnia pobytu w szpitalu bez wymogu 
+                                zmiany daty w stanach chorobowych oraz w NW
+                            </span>
+                        </div>
+                    </td>
+                    <td>400 zł</td>
+                    <!-- <td></td> -->
+                    <td>250 zł</td>
+                    <td>300 zł</td>
+                    <td>100 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">
+                        SZPITAL - w NW KOMUNIKACYJNEGO
+                        <div class="cell-tooltip">
+                            <ion-icon class="cell-tooltip-icon" name="information-circle"></ion-icon>
+                            <span class="cell-tooltip-text">
+                                Wypłata świadczenia od 1. dnia pobytu w szpitalu bez wymogu 
+                                zmiany daty w stanach chorobowych oraz w NW
+                            </span>
+                        </div>
+                    </td>
+                    <td>600 zł</td>
+                    <!-- <td></td> -->
+                    <td>400 zł</td>
+                    <td>500 zł</td>
+                    <td>200 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">
+                        SZPITAL - w NW w PRACY
+                        <div class="cell-tooltip">
+                            <ion-icon class="cell-tooltip-icon" name="information-circle"></ion-icon>
+                            <span class="cell-tooltip-text">
+                                Wypłata świadczenia od 1. dnia pobytu w szpitalu bez wymogu 
+                                zmiany daty w stanach chorobowych oraz w NW
+                            </span>
+                        </div>
+                    </td>
+                    <td>500 zł</td>
+                    <!-- <td></td> -->
+                    <td>450 zł</td>
+                    <td>500 zł</td>
+                    <td>200 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">
+                        SZPITAL - w NW KOMUNIKACYJNEGO w PRACY
+                        <div class="cell-tooltip">
+                            <ion-icon class="cell-tooltip-icon" name="information-circle"></ion-icon>
+                            <span class="cell-tooltip-text">
+                                Wypłata świadczenia od 1. dnia pobytu w szpitalu bez wymogu 
+                                zmiany daty w stanach chorobowych oraz w NW
+                            </span>
+                        </div>
+                    </td>
+                    <td>800 zł</td>
+                    <!-- <td></td> -->
+                    <td>550 zł</td>
+                    <td>700 zł</td>
+                    <td>300 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">POBYT NA OIOM - wartość łączna za 5 dni pobytu</td>
+                    <td>1 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>1 000 zł</td>
+                    <td>500 zł</td>
+                    <td>500 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">REKONWALESCENCJA - wartość łączna za 30 dni pobytu</td>
+                    <td>1 050 zł</td>
+                    <!-- <td></td> -->
+                    <td>1 050 zł</td>
+                    <td>250 zł</td>
+                    <td>250 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">ŚWIADCZENIE LEKOWE po POBYCIE W SZPITALU</td>
+                    <td>200 zł</td>
+                    <!-- <td></td> -->
+                    <td>200 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td class="cell-inactive"></td>
+                </tr>
+                <tr>
+                    <td>LIMIT w ZAKRESIE ASSISTANCE na KAŻDE ZDARZENIE dla KAŻDEGO CZŁONKA RODZINY</td>
+                    <td>10 000 zł</td>
+                    <!-- <td></td> -->
+                    <td>10 000 zł</td>
+                    <td>6 000 zł</td>
+                    <td>6 000 zł</td>
+                </tr>
+                <tr>
+                    <td>PRYWATNE WIZYTY LEKARSKIE dla <strong>WSZYSTKICH CZŁONKÓW RODZINY</strong> w NW - NIELIMITOWANE</td>
+                    <td>TAK</td>
+                    <!-- <td></td> -->
+                    <td>TAK</td>
+                    <td class="cell-inactive"></td>
+                    <td class="cell-inactive"></td>
+                </tr>
+                <tr>
+                    <td>PRYWATNE WIZYTY LEKARSKIE dla <strong>WSZYSTKICH CZŁONKÓW RODZINY</strong> w NW - WIZYTY DOMOWE (PEDIATRA INTERNISTA)</td>
+                    <td>po 3 na os.</td>
+                    <!-- <td></td> -->
+                    <td>po 3 na os.</td>
+                    <td>3 dla wszystkich</td>
+                    <td>3 dla wszystkich</td>
+                </tr>
+                <tr>
+                    <td>PRYWATNE WIZYTY LEKARSKIE dla <strong>WSZYSTKICH CZŁONKÓW RODZINY</strong> w NW - POZOSTAŁE SPECJALIZACJE MEDYCZNE</td>
+                    <td>po 3 na os.</td>
+                    <!-- <td></td> -->
+                    <td>po 3 na os.</td>
+                    <td>3 dla wszystkich</td>
+                    <td>3 dla wszystkich</td>
+                </tr>
+                <tr>
+                    <td>REHABILITACJA - w NW dla <strong>WSZYSTKICH CZŁONKÓW RODZINY</strong></td>
+                    <td>TAK</td>
+                    <!-- <td></td> -->
+                    <td>TAK</td>
+                    <td>TAK</td>
+                    <td>TAK</td>
+                </tr>
+                <tr>
+                    <td>REHABILITACJA - w STANACH CHOROBOWYCH dla <strong>WSZYSTKICH CZŁONKÓW RODZINY</strong></td>
+                    <td>TAK</td>
+                    <!-- <td></td> -->
+                    <td>TAK</td>
+                    <td>TAK</td>
+                    <td>TAK</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">ZGON WSPÓŁMAŁŻONKA / PARTNERA</td>
+                    <td class="cell-inactive"></td>
+                    <td>20 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td class="cell-inactive"></td>
+                    <td>20 000 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">ZGON WSPÓŁMAŁŻONKA / PARTNERA w NW</td>
+                    <td class="cell-inactive"></td>
+                    <td>40 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td class="cell-inactive"></td>
+                    <td>45 000 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">ZGON WSPÓŁMAŁŻONKA / PARTNERA w NW KOMUNIKACYJNYM</td>
+                    <td class="cell-inactive"></td>
+                    <td>60 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td class="cell-inactive"></td>
+                    <td>60 000 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">ZGON WSPÓŁMAŁŻONKA / PARTNERA - ZAWAŁ SERCA / UDAR MÓZGU</td>
+                    <td class="cell-inactive"></td>
+                    <td>20 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td class="cell-inactive"></td>
+                    <td>20 000 zł</td>
+                </tr>
+                <tr>
+                    <td>URODZENIE DZIECKA</td>
+                    <td class="cell-inactive"></td>
+                    <td>2 000 zł</td>
+                    <td>1 500 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td>1 500 zł</td>
+                </tr>
+                <tr>
+                    <td>URODZENIE DZIECKA - CIĄŻA MNOGA</td>
+                    <td class="cell-inactive"></td>
+                    <td>2 000 zł</td>
+                    <td>1 500 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td>1 500 zł</td>
+                </tr>
+                <tr>
+                    <td>URODZENIE DZIECKA WYMAGAJĄCEGO LECZENIA</td>
+                    <td class="cell-inactive"></td>
+                    <td>2 000 zł</td>
+                    <td>4 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td>4 500 zł</td>
+                </tr>
+                <tr>
+                    <td>URODZENIE MARTWEGO NOWORODKA (po 22 tyg. ciąży)</td>
+                    <td class="cell-inactive"></td>
+                    <td>2 000 zł</td>
+                    <td>4 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td>5 000 zł</td>
+                </tr>
+                <tr>
+                    <td>URODZENIE MARTWEGO NOWORODKA - PORONIENIE (przed upływem 22 tyg. ciąży)</td>
+                    <td class="cell-inactive"></td>
+                    <td>2 000 zł</td>
+                    <td>2 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td>5 000 zł</td>
+                </tr>
+                <tr>
+                    <td>ZGON DZIECKA</td>
+                    <td class="cell-inactive"></td>
+                    <td>5 000 zł</td>
+                    <td>5 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td>5 000 zł</td>
+                </tr>
+                <tr>
+                    <td>ZGON DZIECKA w NW</td>
+                    <td class="cell-inactive"></td>
+                    <td>5 000 zł</td>
+                    <td>10 000 zł</td>
+                    <td class="cell-inactive"></td>
+                    <td>1 000 zł</td>
+                <tr>
+                    <td class="cell-dark">ZGON RODZICÓW / TEŚCIÓW</td>
+                    <td class="cell-inactive"></td>
+                    <td>2 000 zł</td>
+                    <td>2 000 zł</td>
+                    <td>2 500 zł</td>
+                    <td>1 500 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">ZGON RODZICÓW / TEŚCIÓW w NW</td>
+                    <td class="cell-inactive"></td>
+                    <td>4 000 zł</td>
+                    <td>4 500 zł</td>
+                    <td>5 000 zł</td>
+                    <td>3 000 zł</td>
+                </tr>
+                <tr>
+                    <td class="cell-dark">ZGON RODZICÓW / TEŚCIÓW w NW KOMUNIKACYJNYM</td>
+                    <td class="cell-inactive"></td>
+                    <td>4 000 zł</td>
+                    <td>7 000 zł</td>
+                    <td>7 500 zł</td>
+                    <td>4 500 zł</td>
+                </tr>
+                <tr>
+                    <td>CENA od Os. m/c</td>
+                    <td>100 zł</td>
+                    <td>35 zł</td>
+                    <td>100 zł</td>
+                    <td>100 zł</td>
+                    <td>100 zł</td>
+                </tr>
+			</tbody>
+		</table>
+	</div>
+
+</BaseLayout>
