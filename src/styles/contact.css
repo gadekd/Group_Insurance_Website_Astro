@@ -1,17 +1,19 @@
 .banner-container {
-    /* border: 1px solid black; */
     padding: 1.5rem;
 }
 
 .banner {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center;
     color: #323232;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .info-page-container {
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .info-card-links {
@@ -19,12 +21,41 @@
 }
 
 .info-card-icon-ion {
-    background-color: var(--sunset-glow-brown);
-    color: var(--sunset-glow-cream);
+    background: linear-gradient(180deg,rgba(203, 153, 126, 1) 0%, rgba(181, 134, 112, 1) 50%);
+    color: var(--sunset-glow-white);
     border-radius: 5rem;
-    padding: .5rem;
+    padding: 1rem;
     margin: 1rem 1rem 1rem 0;
     font-size: 3rem;
+}
+
+.info-card-icon-ion:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-contact-text {
+    position: relative;
+    font-weight: bold;
+}
+
+.info-contact-address {
+    line-height: 1;
+    font-weight: bold;
+}
+
+.info-card-icon-ion:hover + .info-contact-address {
+    color: var(--sunset-glow-brown);
+    transition: color 0.3s ease-in-out;
+}
+
+.info-card-icon-ion:hover + .info-contact-text {
+    color: var(--sunset-glow-brown);
+    transition: color 0.3s ease-in-out;
+}
+
+.info-contact-link {
+    text-decoration: none;
 }
 
 .info-card-link-container {
@@ -34,15 +65,31 @@
 
 .info-card-container {
     padding: 1.5rem;
-    border: .5rem solid var(--sunset-glow-brown);
     border-bottom-left-radius: 2rem;
-    background-color: var(--sunset-glow-brown);
+    background: linear-gradient(135deg,rgba(203, 153, 126, 1) 0%, rgba(181, 134, 112, 1) 50%);
     margin-top: 1rem;
     flex-basis: 100%;
 }
 
 .info-card-name {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.info-card-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.info-card-number-header {
     font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: -1rem;
 }
 
 .info-card-button {

@@ -2,13 +2,45 @@
 import BaseLayout from './BaseLayout.astro';
 
 import '../styles/markdown.css';
+import '../styles/header.css';
 
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
     <h1 class="markdown-page-title">{frontmatter.title}</h1>
-    <div class="img-container">
-        <img class="markdown-page-img" src={frontmatter.url} alt={frontmatter.alt} />
+    <div class="section-symbol-container">
+        <p class="section-symbol">§!</p>
     </div>
+    <!-- <div class="img-container">
+        <img class="markdown-page-img" src={frontmatter.img.url} alt={frontmatter.img.alt} />
+    </div> -->
     <slot />
 </BaseLayout>
+
+<style>
+    body {
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    img {
+        width: 5rem;
+        height: auto;
+    }
+
+    .markdown-page-title {
+        margin-bottom: -4rem;
+    }
+
+    .section-symbol-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -2rem;
+    }
+
+    .section-symbol {
+        font-size: 5rem;
+        color: var(--sunset-glow-orange);
+        font-family: 'Badeen Display', sans-serif;
+    }
+</style>

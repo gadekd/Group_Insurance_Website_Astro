@@ -1,6 +1,7 @@
 .footer-container {
     background: rgb(35,35,35);
     background: linear-gradient(0deg, rgba(35,35,35,1) 0%, rgba(50,50,50,1) 100%);
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .upper-container {
@@ -31,25 +32,41 @@
 
 .footer-links {
     padding: 0;
-}
-
-.footer-links, .links-container {
+    position: relative;
     color: var(--sunset-glow-white);
     list-style: none;
-}
-
-.footer-links a, .links-container a {
-    text-transform: none;
-    font-weight: normal;
-    font-size: .8rem;
 }
 
 .footer-links li {
     padding-bottom: .4rem;
 }
 
-.footer-links a:hover, .links-container a:hover {
-    color: var(--sunset-glow-cream);
+.footer-link {
+    position: relative;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+.footer-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: -0.25rem;
+    left: 0;
+    background-color: var(--sunset-glow-orange);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.footer-link:hover::before {
+    transform: scaleX(1);
+}
+
+.footer-link:hover {
+    color: var(--sunset-glow-orange);
+    transition: 0.3s ease-in-out;
 }
 
 .footer-logo {
@@ -76,21 +93,24 @@
     color: #ececec;
 }
 
+.desc-line1:hover {
+    color: var(--sunset-glow-orange);
+    transition: 0.3s ease-in-out;
+}
+
 .section-title-links {
     font-size: 1rem;
-    padding-left: .3rem;
+    color: var(--sunset-glow-white);
 }
 
 .section-title {
     font-size: 1rem;
-    /* padding-left: .4rem; */
 }
 
 .divider-links {
     border-top: 5px solid #ececec;
     height: 1rem;
     max-width: 15%;
-    margin-left: .3rem;
     margin-bottom: -0.5rem;
 }
 
@@ -132,13 +152,32 @@
 }
 
 .copyright-link {
+    position: relative;
     text-transform: none;
     font-weight: normal;
-    /* margin-left: 5%; */
+    text-decoration: none;
+}
+
+.copyright-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: -0.25rem;
+    left: 0;
+    background-color: var(--sunset-glow-orange);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.copyright-link:hover::before {
+    transform: scaleX(1);
 }
 
 .copyright-link:hover {
-    color: var(--sunset-glow-cream);
+    color: var(--sunset-glow-orange);
+    transition: 0.3s ease-in-out;
 }
 
 .effp-cert-container {

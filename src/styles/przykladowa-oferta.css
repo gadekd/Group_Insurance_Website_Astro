@@ -10,7 +10,7 @@
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
-    background-color: #b2d4ea;
+    background-color: var(--sunset-glow-yellow);
 }
 
 .offer-table th:not(:first-child) {
@@ -46,8 +46,26 @@
     font-size: .75rem;
 }
 
-.offer-table tbody tr:last-child td {
-    background-color: #ddd !important;
+.offer-table tbody td:nth-child(even), td:not(:nth-child(-n+3)) {
+    background-color: #c0ffad;
+}
+
+.offer-table tbody td:nth-child(even):hover {
+    background-color: #8bec6d;
+    transition: .3s ease-in-out;
+}
+
+.offer-table tbody td:nth-child(2n+3), td:not(:nth-child(-n+3)) {
+    background-color: #b2d4ea;
+}
+
+.offer-table tbody td:nth-child(2n+3):hover {
+    background-color: #62a7d4;
+    transition: .3s ease-in-out;
+}
+
+.offer-table tbody tr:nth-last-child(4) td {
+    background-color: #deb49d !important;
 }
 
 .offer-table tbody td:first-child {
@@ -55,11 +73,11 @@
     padding: .5rem 1rem;
 }
 
-.offer-table tbody tr:last-child td:first-child {
+.offer-table tbody tr:nth-last-child(4) td:first-child {
     text-align: right;
 }
 
-.offer-table tbody tr:last-child td:not(:first-child) {
+.offer-table tbody tr:nth-last-child(4) td:not(:first-child) {
     font-weight: bold;
 }
 
@@ -74,6 +92,10 @@
     background-color: #ddd !important;
 }
 
+.cell-darker {
+    background-color: #bbb !important;
+}
+
 .cell-inactive {
     background-color: #aaa !important;
 }
@@ -81,6 +103,10 @@
 .cell-broad {
     background-color: #aaa !important;
     font-weight: bold;
+}
+
+.cell-white {
+    background-color: #f0f0f0 !important;
 }
 
 .cell-broad-division {
@@ -103,11 +129,22 @@
     float: right;
 }
 
+.cell-tooltip-2 {
+    position: relative;
+    cursor: pointer;
+}
+
 .cell-tooltip-icon {
     font-size: 1rem;
     color: #3d729d;
     vertical-align: middle;
     margin-top: -0.2rem;
+}
+
+.cell-tooltip-icon-2 {
+    color: #ce0d0d;
+    font-size: 1.4rem;
+    display: inline-block;
 }
 
 .cell-tooltip-text {
@@ -130,7 +167,7 @@
 .cell-tooltip-text::after {
     content: " ";
     position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
+    top: 100%; /* Na dole tooltipu */
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
@@ -142,4 +179,14 @@
     visibility: visible;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+}
+
+.cell-tooltip-2:hover .cell-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.warning-text {
+    color: #ac1515;
 }

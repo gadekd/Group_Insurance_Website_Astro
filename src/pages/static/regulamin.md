@@ -2,8 +2,8 @@
 layout: ../../layouts/MarkdownFileLayout.astro
 title: "Regulamin"
 img: 
-    url: ""
-    alt: "Logo portalu Ubezpieczenia Grupowe"
+    url: "../../src/assets/logotypes/ug-icon2.svg"
+    alt: "Symbol sekcji"
 ---
 ### Regulamin serwisu
 

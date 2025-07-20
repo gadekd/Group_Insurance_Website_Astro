@@ -1,42 +1,75 @@
 .banner-container {
-    /* border: 1px solid black; */
     padding: 1.5rem;
 }
 
 .banner {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center;
     color: #323232;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.team-section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .person-container {
     display: flex;
     align-items: center;
-    background-color: #323232;
+    flex-direction: row;
+    background: rgb(35,35,35);
+    background: linear-gradient(135deg, rgba(35,35,35,1) 0%, rgba(50,50,50,1) 100%);
     border-radius: 1rem;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     margin-top: 2rem;
+}
+
+.person-container:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
 }
 
 .person-text {
     color: var(--sunset-glow-white);
+    margin-right: 2rem;
+    margin-top: -0.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .person-name {
     color: var(--sunset-glow-white);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.person-position {
+    color: var(--sunset-glow-brown);
+    font-family: 'Noto Sans Bold', sans-serif;
+    margin-top: -0.5rem;
 }
 
 .agents-container {
-
+    margin-bottom: 5rem;
 }
 
 .person-photo {
     max-width: 10rem;
-    border: .5rem solid var(--sunset-glow-brown);
+    border: .5rem solid transparent;
+    background: linear-gradient(0deg,rgba(203, 153, 126, 1) 0%, rgba(181, 134, 112, 1) 50%) padding-box,
+                linear-gradient(180deg,rgba(203, 153, 126, 1) 0%, rgba(181, 134, 112, 1) 50%) border-box;
     border-radius: 5rem;
     margin-right: 1rem;
     margin-left: 2rem;
+}
+
+.person-img-container {
+    margin-top: 1rem;
 }
 
 .person-photo-icon {
@@ -51,7 +84,9 @@
 .person-photo-icon-agent {
     font-size: 5rem;
     color: var(--sunset-glow-brown);
-    border: .5rem solid var(--sunset-glow-brown);
+    border: .5rem solid transparent;
+    background: linear-gradient(0deg,rgba(203, 153, 126, 1) 0%, rgba(181, 134, 112, 1) 50%) padding-box,
+                linear-gradient(180deg,rgba(203, 153, 126, 1) 0%, rgba(181, 134, 112, 1) 50%) border-box;
     border-radius: 5rem;
     padding: 2rem;
 }
@@ -60,9 +95,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #323232;
+    background: rgb(35,35,35);
+    background: linear-gradient(135deg, rgba(35,35,35,1) 0%, rgba(50,50,50,1) 100%);
     padding: 1rem;
-    width: 15rem;
+    width: 20rem;
     border-radius: 1rem;
 }
 
@@ -73,27 +109,66 @@
     padding: 1rem;
 }
 
+.person-container-agent:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
 .person-description-agent {
     text-align: center;
     color: var(--sunset-glow-white);
+}
+
+.person-contact-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.person-contact-details {
+    display: flex;
+    align-self: center;
+}
+
+.person-contact-details:nth-child(2) {
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+}
+
+.person-contact-detail-icon {
+    font-size: 1.2rem;
+    color: var(--sunset-glow-brown);
+    margin-right: 0.5rem;
+}
+
+.detail-phone {
+    margin-top: 1.2rem;
 }
 
 .upper-con {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .lower-con {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 .administration-container {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.administration-container > .person-container-agent {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }

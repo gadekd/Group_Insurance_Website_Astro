@@ -1,6 +1,7 @@
 html {
     font-family: sans-serif;
-    background-color: var(--sunset-glow-cream);
+    /* background-color: var(--sunset-glow-cream); */
+    background-color: #faf0e6;
 }
 
 body {
@@ -28,4 +29,60 @@ body {
     --sunset-glow-brown: #cb997e;
     --sunset-glow-cream: #ffe8d6;
     --sunset-glow-white: #fffcf6;
+  }
+
+  /* Fonts */
+
+  @font-face {
+    font-family: 'Agdasima';
+    src: url('/fonts/static/Agdasima-Regular.ttf') format('woff2');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Agdasima Bold';
+    src: url('/fonts/static/Agdasima-Bold.ttf') format('woff2');
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Badeen Display';
+    src: url('/fonts/static/BadeenDisplay-Regular.ttf') format('woff2');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Coda';
+    src: url('/fonts/static/Coda-Regular.ttf') format('woff2');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Coda Bold';
+    src: url('/fonts/static/Coda-Bold.ttf') format('woff2');
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Modak';
+    src: url('/fonts/static/Modak-Regular.ttf') format('woff2');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Noto Sans';
+    src: url('/fonts/static/NotoSans-Regular.ttf') format('woff2');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Noto Sans Bold';
+    src: url('/fonts/static/NotoSans-Bold.ttf') format('woff2');
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Oi';
+    src: url('/fonts/static/Oi-Regular.ttf') format('woff2');
+    font-style: normal;
   }

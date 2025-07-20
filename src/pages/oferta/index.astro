@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import OfferForm from '../../components/OfferForm.astro';
 
 import '../../styles/oferta.css';
 
@@ -16,7 +17,7 @@ const pageTitle = 'Oferta • Ubezpieczenie grupowe'
             <button class="offer-button" role="button">
                 <!-- <a class="offer-link" href="../src/assets/pdf/9companies.pdf" download="Ubezpieczenia_Grupowe_Oferta"> -->
                 <a class="offer-link" href="/oferta/porownanie">
-                    <ion-icon name="cloud-download"></ion-icon>
+                    <ion-icon class="offer-button-icon" name="swap-horizontal"></ion-icon>
                     Porównanie zakresu
                 </a>
             </button>
@@ -24,7 +25,7 @@ const pageTitle = 'Oferta • Ubezpieczenie grupowe'
         <div class="button-container">
             <button class="offer-button" role="button">
                 <a class="offer-link" href="/oferta/przykladowa-oferta">
-                    <ion-icon name="cloud-download"></ion-icon>
+                    <ion-icon class="offer-button-icon" name="document"></ion-icon>
                     Przykłdowa oferta
                 </a>
             </button>
@@ -32,31 +33,170 @@ const pageTitle = 'Oferta • Ubezpieczenie grupowe'
     </div>
 
     <div class="form-container">
-        <h3>
-            Szablon ofertowy
+        <h3 class="form-header">
+            Wyślij <span class="keyword">zapytanie</span> i otrzymaj najlepszą ofertę ubezpieczenia grupowego dla swojej firmy
         </h3>
 
-        <form action="/submit" method="post">
-            <label for="companies">Wybierz towarzystwa</label>
-            <input type="text" id="companies" name="companies" />
-            <label for="nip">NIP</label>
-            <input type="text" id="nip" name="nip" />
-            <label for="workersAmount">Ilość pracowników</label>
-            <input type="number" id="workersAmount" name="workersAmount" />
-            <label for="maxContribution">Maksymalna stawka za osobę</label>
-            <input type="text" id="maxContribution" name="maxContribution" />
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" />
-            <label for="phone">Telefon</label>
-            <input type="text" id="phone" name="phone" />
-            <label for="recording">Czy chcesz dedykowane nagranie dla pracowników?</label>
-            <input type="checkbox" id="recording" name="recording" value="Tak" />
-            <label for="contact">Wyrażam zgodę na kontakt dotyczący oferty ubezpieczenia grupowego</label>
-            <input type="checkbox" id="contact" name="contact" value="Tak" />
-            <button class="offer-button" role="button">
-                <ion-icon name="cloud-upload"></ion-icon>
-                <input class="submit-button" type="submit" value="PRZEŚLIJ" />
-            </button>
-        </form>
+        <div class="arrow">
+            <div class="curve"></div>
+            <div class="point"></div>
+        </div>
+
+        <OfferForm />
+
     </div>
+
+    <!-- <script>
+    import axios from 'axios';
+      axios
+        .post("https://submit-form.com/vqb8GwXZp", {
+          message: "Hello, World",
+        })
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (response) {
+          console.error(response);
+        });
+    </script> -->
+
+    <script>
+        // import { MailtrapClient } from "mailtrap"
+        // import nodemailer from 'nodemailer';
+
+        // const TOKEN = "8b087fceedd09963e5aad958ca6c4ef3";
+        // const SENDER_EMAIL = "hello@demomailtrap.co";
+        // const RECIPIENT_EMAIL = "gerwazyzmilowa@gmail.com";
+
+        // const client = new MailtrapClient({ token: TOKEN });
+
+        const offerForm = document.querySelector('form');
+
+        // Pola formularza
+        let selectCompany = document.getElementById('companies');
+        let inputNip = document.getElementById('nip');
+        let inputWorkersAmount = document.getElementById('workersAmount');
+        let inputMaxContribution = document.getElementById('maxContribution');
+        let inputEmail = document.getElementById('email');
+        let inputPhone = document.getElementById('phone');
+        let message = document.getElementById('message');
+        // Checkboxy
+        let inputRecording = document.getElementById('recording');
+        let inputContact = document.getElementById('contact');
+
+        console.log("Jakie pola mamy:", {
+            selectCompany: selectCompany.value,
+            nip: inputNip.value,
+            workersAmount: inputWorkersAmount.value,
+            maxContribution: inputMaxContribution.value,
+            email: inputEmail.value,
+            phone: inputPhone.value,
+            message: message.value,
+            recording: inputRecording.checked,
+            contact: inputContact.checked
+        });
+
+        offerForm?.addEventListener('submit', (event) => {
+            event.preventDefault();
+            
+            if (!selectCompany) {
+                alert('Proszę wybrać towarzystwo ubezpieczeniowe.');
+                return;
+            }
+
+            let formData = {
+                companies: selectCompany.value,
+                nip: inputNip.value,
+                workersAmount: inputWorkersAmount.value,
+                maxContribution: inputMaxContribution.value,
+                email: inputEmail.value,
+                phone: inputPhone.value,
+                message: message.value,
+                recording: inputRecording.checked,
+                contact: inputContact.checked
+            };
+            console.log("Form Data: ", formData);
+            console.log("Companies selected:", selectCompany.value);
+
+            // Nodemailer
+            // let transport = nodemailer.createTransport({
+            //     host: "live.smtp.mailtrap.io",
+            //     port: 587,
+            //     auth: {
+            //         user: "api",
+            //         pass: "8b087fceedd09963e5aad958ca6c4ef3"
+            //     }
+            // });
+
+            // (async () => {
+            //     const info = await transport.sendMail({
+            //         from: '"Gerwazy Żeberko" <gerwazyzmilowa@gmail.com>',
+            //         to: "gerwazyzmilowa@gmail.com",
+            //         subject: "Hello ✔",
+            //         text: "Hello world?", // plain‑text body
+            //         html: "<b>Hello world?</b>", // HTML body
+            //     });
+
+            //     console.log("Message sent:", info.messageId);
+            // })();
+
+            // Wysyłanie danych formularza
+            let xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://submit-form.com/vqb8GwXZp', true);
+            xhr.setRequestHeader('Access-Control-Allow-Origin', 'http://localhost:4321');
+            xhr.setRequestHeader('Access-Control-Allow-Methods', 'POST, GET');
+            xhr.setRequestHeader('Access-Control-Allow-Headers', 'Content-Type, Accept');
+            xhr.setRequestHeader('Access-Control-Allow-Credentials', 'true');
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.onload = function() {
+                console.log('Response:', xhr.responseType);
+                if (xhr.responseText == 'success') {
+                    console.log("XHR RESPONSE:", xhr.responseText);
+                    alert('Formularz został pomyślnie wysłany!');
+                    // Jeśli formularz został wysłany pomyślnie, zresetuj pola formularza
+                    companies.value = '';
+                    nip.value = '';
+                    workersAmount.value = '';
+                    maxContribution.value = '';
+                    email.value = '';
+                    phone.value = '';
+                    message.value = '';
+                    recording.checked = false;
+                    contact.checked = false;
+                } else {
+                    console.log("RESPONSE:", xhr.responseText);
+                    alert('Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie.');
+                }
+            }
+
+            xhr.send(JSON.stringify(formData));
+
+            // fetch("http://submit-form.com/vqb8GwXZp", {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //         'Accept': 'application/json',
+            //         'Access-Control-Allow-Origin': '*'
+            //     },
+            //     body: JSON.stringify({
+            //             message: "Hello, World",
+            //         })
+            // })
+            // .then(response => {
+            //     if (response.ok) {
+            //         alert('Formularz został pomyślnie wysłany!');
+            //         offerForm.reset();
+            //     } else {
+            //         console.log("pierwszy else!", response)
+            //         alert('Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie.');
+            //     }
+            // })
+            // .catch(error => {
+            //     console.error('Error:', error);
+            //     alert('Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie.');
+            // });
+        });
+    </script>
 </BaseLayout>

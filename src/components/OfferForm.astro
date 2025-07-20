@@ -1,0 +1,86 @@
+---
+import '../styles/oferta.css';
+// import 'bootstrap/dist/css/bootstrap.css';
+---
+<form action="" method="post" class="offer-form" id="offer-form">
+    <div class="form-box">
+        <div class="form-field-container custom-select">
+            <label for="companies" class="form-label">Wybierz towarzystwo</label>
+            <select class="form-select" id="companies" name="companies">
+                <option value="">Wybierz towarzystwo...</option>
+                <option value="unum">UNUM</option>
+                <option value="uniqa">UNIQA</option>
+                <option value="generali">Generali</option>
+                <option value="warta">WARTA</option>
+                <option value="ergo_hestia">ERGO HESTIA</option>
+                <option value="viena_life">VIENA LIFE</option>
+                <option value="allianz">ALLIANZ</option>
+                <option value="pzu">PZU</option>
+                <option value="nn">NN</option>
+            </select>
+            <div class="error-message">
+                Nie wybrano towarzystwa ubezpieczeniowego. Proszę wybrać jedno z dostępnych.
+            </div>
+        </div>
+        <div class="form-field-container form-group">
+            <label for="nip" class="form-label">NIP</label>
+            <input class="form-field form-control" type="text" id="nip" name="nip" placeholder="Wprowadź numer NIP..." autocomplete="off" />
+            <div class="error-message">
+                Nie wprowadzono numeru NIP. Proszę podać poprawny numer NIP swojej firmy.
+            </div>
+        </div>
+        <div class="form-field-container">
+            <label for="workersAmount" class="form-label">Ilość pracowników</label>
+            <input class="form-field" type="number" id="workersAmount" name="workersAmount" placeholder="Podaj ilość pracowników, których chcesz ubezpieczyć..." autocomplete="off" />
+            <div class="error-message">
+                Nie wprowadzono ilości pracowników. Proszę podać liczbę pracowników, których chcesz ubezpieczyć.
+            </div>
+        </div>
+        <div class="form-field-container">
+            <label for="maxContribution" class="form-label">Maksymalna stawka za osobę</label>
+            <input class="form-field" type="text" id="maxContribution" name="maxContribution" placeholder="Podaj maksymalną stawkę za osobę..." autocomplete="off" />
+            <div class="error-message">
+                Nie wprowadzono maksymalnej stawki za osobę. Proszę podać maksymalną kwotę, jaką jesteś w stanie przeznaczyć na ubezpieczenie pracownika.
+            </div>
+        </div>
+        <div class="form-field-container">
+            <label for="email" class="form-label">E-mail</label>
+            <input class="form-field" type="email" id="email" name="email" placeholder="Wprowadź swój adres e-mail..." autocomplete="off" />
+            <div class="error-message">
+                Nie wprowadzono adresu e-mail. Proszę podać poprawny adres e-mail, abyśmy mogli się z Tobą skontaktować.
+            </div>
+        </div>
+        <div class="form-field-container">
+            <label for="phone" class="form-label">Telefon</label>
+            <input class="form-field" type="text" id="phone" name="phone" placeholder="Wprowadź swój numer telefonu..." autocomplete="off" />
+            <div class="error-message">
+                Nie wprowadzono numeru telefonu. Proszę podać poprawny numer telefonu.
+            </div>
+        </div>
+        <div class="form-field-container">
+            <label for="message" class="form-label">Dodatkowe informacje</label>
+            <textarea class="form-field" id="message" name="message" placeholder="Napisz coś więcej, jeśli chcesz..." rows="5" autocomplete="off"></textarea>
+        </div>
+        <div class="form-field-container">
+            <div class="form-field-checkbox">
+                <input class="form-checkbox" type="checkbox" id="recording" name="recording" value="Tak" />
+                <label for="recording" class="form-label-checkbox">Czy chcesz dedykowane nagranie dla pracowników?</label>
+            </div>
+        </div>
+        <div class="form-field-container">
+            <div class="form-field-checkbox">
+                <input class="form-checkbox" type="checkbox" id="contact" name="contact" value="Tak" required />
+                <label for="contact" class="form-label-checkbox">Wyrażam zgodę na kontakt dotyczący oferty ubezpieczenia grupowego</label>
+            </div>
+            <div class="error-message">
+                Proszę wyrazić zgodę na kontakt. Bez tej zgody nie będziemy mogli przesłać oferty.
+            </div>
+        </div>
+        <div class="offer-button-container">
+            <button class="offer-button send-button" role="button">
+            <ion-icon name="send"></ion-icon>
+            <input class="submit-button" type="submit" value="PRZEŚLIJ" />
+            </button>
+        </div>
+    </div>
+</form>

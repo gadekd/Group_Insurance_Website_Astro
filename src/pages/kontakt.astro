@@ -15,17 +15,20 @@ const pageTitle = 'Kontakt • Ubezpieczenie grupowe'
         <div class="info-card-links">
             <div class="info-card-link-container">
                 <ion-icon class="info-card-icon-ion" name="location-outline"></ion-icon>
-                <p>ul. Zebrzydowicka 35, 44-210 Rybnik</p>
+                <div class="info-contact-address">
+                    <p class="info-contact-text">ul. Zebrzydowicka 35,</p>
+                    <p class="info-contact-text">44-210 Rybnik</p>
+                </div>
             </div>
         
             <div class="info-card-link-container">
                 <ion-icon class="info-card-icon-ion" name="call-outline"></ion-icon>
-                <p>+48 696 043 773</p>
+                <p class="info-contact-text">(+48) 696 043 773</p>
             </div>
         
             <div class="info-card-link-container">
                 <ion-icon class="info-card-icon-ion" name="mail-outline"></ion-icon>
-                <p>kontakt@prywatnel4.pl</p>
+                <p class="info-contact-text"><a class="info-contact-link" href="mailto:kontakt@prywatnel4.pl">kontakt@prywatnel4.pl</a></p>
             </div>
         </div>
     
@@ -35,13 +38,6 @@ const pageTitle = 'Kontakt • Ubezpieczenie grupowe'
             </div>
     
             <div class="info-card-address">
-                <!-- <img class="info-card-icon" src="../src/assets/icons/location-dot-solid.svg" alt="Address Icon" /> -->
-                <p>ul. Zebrzydowicka 35, 44-210 Rybnik</p>
-                <!-- <button type="button" class="info-card-button">
-                    Pokaż na mapie
-                    <img class="info-card-icon" src="../src/assets/icons/caret-down.svg" alt="Caret Down Icon" /> -->
-                    <!-- <img class="info-card-icon" src="../src/assets/icons/caret-up.svg" alt="Caret Up Icon" /> -->
-                <!-- </button> -->
                 <div class="info-card-map">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.4393184482524!2d18.520718076234953!3d50.09678351276595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47114f307e0171e1%3A0x848d4e8ee7644a5b!2sZebrzydowicka%2035%2C%2044-210%20Rybnik!5e0!3m2!1spl!2spl!4v1744581897386!5m2!1spl!2spl" 
@@ -56,8 +52,14 @@ const pageTitle = 'Kontakt • Ubezpieczenie grupowe'
             </div>
     
             <div class="info-card-numbers">
-                <p>NIP: 642-323-67-18</p>
-                <p>KRS: 0000963774</p>
+                <div class="info-card-number-header">
+                    NIP
+                </div>
+                <p>642-323-67-18</p>
+                <div class="info-card-number-header">
+                    KRS
+                </div>
+                <p>0000963774</p>
             </div>
         </div>
     </div>

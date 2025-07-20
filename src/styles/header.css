@@ -1,44 +1,63 @@
 .nav-container {
-    background-color: var(--sunset-glow-orange);
+    /* background-color: var(--sunset-glow-orange); */
+    background: #FF9F1C;
+    background: linear-gradient(0deg,rgba(255, 159, 28, 1) 0%, rgba(232, 145, 23, 1) 50%);
     width: 100%;
     margin: auto;
+    font-family: 'Agdasima', sans-serif;
 }
 
-.nav-links {
-    background: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.nav-link-logo-container {
+    padding: .2rem 0;
 }
 
-.nav-links li {
-    display: inline;
+.nav-link-logo {
+    margin-right: 1rem;
 }
 
-.nav-links a {
-    display: inline-block;
+.nav-link {
+    position: relative;
     padding: 10px 5px;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    color: black;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-    background-color: var(--sunset-glow-brown);
+.yt-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: .5rem;
+    left: 0;
+    background-color: #FF0000;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.yt-link:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-link:hover {
+    color: var(--sunset-glow-white);
+    transition: 0.3s ease-in-out;
 }
 
 .header-logo {
     max-width: 25rem;
 }
 
+.header-logo:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
 
 .nav-container {
     display: flex;
 	justify-content: center;
+    color: var(--sunset-glow-cream);
 }
 
 .nav-wrapper {
@@ -47,20 +66,9 @@
     align-items: center;
 }
 
-div:first-child {
-    padding: .2rem 0;
-}
-
-div a {
-    padding: 10px 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-}
-
-div:not(:first-child) a:hover,
-div:not(:first-child) a:focus {
-    /* background-color: #cab5a8; */
-}
+/* .yt-link:hover {
+    color: var(--sunset-glow-white);
+    text-decoration: underline;
+    text-decoration-color: #FF0000;
+    transition: 0.3s ease-in-out;
+} */
