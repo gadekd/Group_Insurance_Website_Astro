@@ -43,33 +43,10 @@ const pageTitle = 'Oferta • Ubezpieczenie grupowe'
         </div>
 
         <OfferForm />
-
     </div>
 
-    <!-- <script>
-    import axios from 'axios';
-      axios
-        .post("https://submit-form.com/vqb8GwXZp", {
-          message: "Hello, World",
-        })
-        .then(function (response) {
-          console.log(response);
-        })
-        .catch(function (response) {
-          console.error(response);
-        });
-    </script> -->
 
     <script>
-        // import { MailtrapClient } from "mailtrap"
-        // import nodemailer from 'nodemailer';
-
-        // const TOKEN = "8b087fceedd09963e5aad958ca6c4ef3";
-        // const SENDER_EMAIL = "hello@demomailtrap.co";
-        // const RECIPIENT_EMAIL = "gerwazyzmilowa@gmail.com";
-
-        // const client = new MailtrapClient({ token: TOKEN });
-
         const offerForm = document.querySelector('form');
 
         // Pola formularza
@@ -118,27 +95,6 @@ const pageTitle = 'Oferta • Ubezpieczenie grupowe'
             console.log("Form Data: ", formData);
             console.log("Companies selected:", selectCompany.value);
 
-            // Nodemailer
-            // let transport = nodemailer.createTransport({
-            //     host: "live.smtp.mailtrap.io",
-            //     port: 587,
-            //     auth: {
-            //         user: "api",
-            //         pass: "8b087fceedd09963e5aad958ca6c4ef3"
-            //     }
-            // });
-
-            // (async () => {
-            //     const info = await transport.sendMail({
-            //         from: '"Gerwazy Żeberko" <gerwazyzmilowa@gmail.com>',
-            //         to: "gerwazyzmilowa@gmail.com",
-            //         subject: "Hello ✔",
-            //         text: "Hello world?", // plain‑text body
-            //         html: "<b>Hello world?</b>", // HTML body
-            //     });
-
-            //     console.log("Message sent:", info.messageId);
-            // })();
 
             // Wysyłanie danych formularza
             let xhr = new XMLHttpRequest();
